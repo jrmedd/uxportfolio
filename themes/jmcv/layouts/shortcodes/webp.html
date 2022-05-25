@@ -1,0 +1,5 @@
+<picture>
+  <source srcset="{{ .Get.src }}.webp" type="image/webp" />
+  <source srcset="{{ .Get.src }}.png" type="image/png" />
+  <img width="{{ .Get.width }}" src="{{ .Get.src }}.png" alt="{{ .Get.alt }}" />
+</picture>

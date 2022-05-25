@@ -1,0 +1,22 @@
+{{ partial "head.html" . }}
+	{{ partial "header.html" . }}
+	<main>
+		<h1>{{ .Title }}</h1>
+		<h2>{{ .Description }}</h2>
+		{{ if .Params.Hero }}
+		<figure class="hero">
+			<picture>
+				<source srcset="{{ .Params.Hero }}.webp" type="image/webp" />
+				<source srcset="{{ .Params.Hero }}.png" type="image/png" />
+				<img width="960" src="{{ .Params.Hero }}.png" alt="{{ .Params.Caption }}" />
+			</picture>
+			<figcaption>{{ .Params.Caption }}</figcaption>
+		</figure>
+		{{ end }}
+		{{.Content}}
+	</main>
+	<nav>
+		{{if .Next}}<a class="prev-link"href="{{.Next.Permalink}}">Previous: {{ .Next.Title }}</a>{{ else}}<div></div>{{end}}
+		{{if .Prev}}<a class="next-link"href="{{.Prev.Permalink}}">Next: {{ .Prev.Title }}</a>{{ else}}<div></div>{{end}}
+	</nav>
+{{ partial "footer.html" }}

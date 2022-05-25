@@ -1,0 +1,5 @@
+.test p {
+  color: #000000; }
+
+.test + div {
+  color: red; }

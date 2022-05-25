@@ -1,0 +1,20 @@
+{{ partial "head.html" . }}
+	{{ partial "header.html" . }}
+		<main>
+			<h1>{{ .Title }}</h1>
+			{{.Content}}
+			<h2>Projects</h2>
+			<dl class="work">
+			{{ range .Pages }}
+				<div>
+					<dt>
+						<a href="{{ .RelPermalink }}">{{.Title}}</a>
+					</dt>
+					<dd>
+						{{ .Description }}
+					</dd>
+				</div>
+			{{ end }}
+			</dl>
+		</main>
+{{ partial "footer.html" . }}

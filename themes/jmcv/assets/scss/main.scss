@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+$background: #27252f;
+$background-transparent: #27252fdd;
+$text: #ffffff;
+$icons: #3a343d;
+
+:root {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+body {
+  background-color: $background;
+  color: $text;
+}
+
+header,
+main,
+nav {
+  width: 60rem;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  height: 4rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid $text;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5rem;
+
+  a {
+    border-bottom: 0;
+    letter-spacing: .05ch;
+  }
+}
+
+nav {
+  display: flex;
+  margin-top: 2rem;
+  border-top: 2px solid $text;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  width: 70ch;
+  max-width: 100%;
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+a {
+  border-bottom: 2px dashed $text;
+  color: $text;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.work {
+  & > div + div {
+  margin-top: 1rem;
+  }
+
+  dt::after {
+    content: ':';
+  }
+
+  dt,
+  dd {
+    display: inline;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 150%;
+  }
+}
+
+section + section {
+  margin-top: 4rem;
+}
+
+ul {
+  max-width: 70ch;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+.hero {
+  width: 60rem;
+  max-width: 95%;
+  margin: 0;
+  position: relative;
+  figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: .5rem;
+    background-color: $background-transparent;
+    text-shadow: 1px 1px 0px $icons;
+  }
+  img {
+    width: 100%;
+  }
+}
