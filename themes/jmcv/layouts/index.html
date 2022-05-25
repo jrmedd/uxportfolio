@@ -17,4 +17,12 @@
 			{{ end }}
 			</dl>
 		</main>
+		<nav class="social" aria-label="Social media links">
+			<ul>
+				{{ range .Params.Social }}
+				<li><a href="https://{{ . }}.jamesmedd.co.uk">{{ . }}</a></li>
+				{{ end }}
+			</ul>
+		</nav>
+
 {{ partial "footer.html" . }}

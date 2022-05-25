@@ -32,7 +32,8 @@ nav {
 
 header {
   display: flex;
-  height: 4rem;
+  height: auto;
+  min-height: 4rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid $text;
   justify-content: flex-start;
@@ -42,6 +43,11 @@ header {
   a {
     border-bottom: 0;
     letter-spacing: .05ch;
+
+    span {
+      display: inline-block;
+      clear: left;
+    }
   }
 }
 
@@ -113,5 +119,24 @@ ul {
   }
   img {
     width: 100%;
+  }
+}
+
+.social {
+  border: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    flex-flow: row wrap;
+  }
+
+  li {
+    list-style: none;
+    text-transform: capitalize;
   }
 }
