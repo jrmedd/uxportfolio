@@ -4,6 +4,15 @@ $background: #27252f;
 $background-transparent: #27252fdd;
 $text: #ffffff;
 $icons: #3a343d;
+$readable-width: 70ch;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
 
 :root {
   font-family: 'Work Sans', sans-serif;
@@ -14,7 +23,10 @@ h2,
 h3,
 h4,
 h5 {
+  width: fit-content;
   font-weight: 400;
+  width: $readable-width;
+  max-width: 100%;
 }
 
 body {
@@ -31,22 +43,25 @@ nav {
 }
 
 header {
-  display: flex;
   height: auto;
   min-height: 4rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid $text;
-  justify-content: flex-start;
-  align-items: center;
   font-size: 1.5rem;
 
   a {
     border-bottom: 0;
     letter-spacing: .05ch;
+  
+    strong {
+      display: inline-block;
+      margin-top: 1rem;
+    }
 
     span {
       display: inline-block;
       clear: left;
+      margin: 1rem 0;
     }
   }
 }
@@ -61,8 +76,9 @@ nav {
 }
 
 p {
-  width: 70ch;
+  width: $readable-width;
   max-width: 100%;
+  margin: 1rem 0;
   font-size: 1.25rem;
   line-height: 150%;
 }
@@ -75,8 +91,9 @@ a {
 }
 
 .work {
+  width: $readable-width;
   & > div + div {
-  margin-top: 1rem;
+  margin-top: 2rem;
   }
 
   dt::after {
@@ -97,16 +114,20 @@ section + section {
 }
 
 ul {
-  max-width: 70ch;
+  width: $readable-width;
+  max-width: 100%;
   padding-left: 1rem;
   font-size: 1.25rem;
   line-height: 150%;
+  li {
+    margin: 1.5rem 0;
+  }
 }
 
-.hero {
-  width: 60rem;
-  max-width: 95%;
-  margin: 0;
+figure {
+  width: 40rem;
+  max-width: 100%;
+  margin: 2rem 0;
   position: relative;
   figcaption {
     position: absolute;
@@ -117,26 +138,7 @@ ul {
     background-color: $background-transparent;
     text-shadow: 1px 1px 0px $icons;
   }
-  img {
+  img, video {
     width: 100%;
-  }
-}
-
-.social {
-  border: 0;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 1rem;
-    flex-flow: row wrap;
-  }
-
-  li {
-    list-style: none;
-    text-transform: capitalize;
   }
 }

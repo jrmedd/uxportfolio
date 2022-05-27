@@ -4,6 +4,8 @@ description: "Prioritising information in the civil service"
 date: 2022-05-23T13:28:21+01:00
 draft: true
 weight: 3
+hero: 'hero'
+caption: 'An example of user responses to a prototype during the design phase.'
 ---
 
 {{% section %}}
@@ -16,7 +18,9 @@ This was my first project working for cloudThing, and boy did they throw me in t
 
 {{% section %}}
 
-## What I did
+{{% webp name=`beisprofiles` alt=`A list of user profiles created on the back of several hours of interviewing staff members.`%}}
+
+## Finding the root of the requirements
 
 Beyond a simple demonstration of what the technology could offer, the department was keen to tell a captivating story to encourage senior leadership teams to invest in such a development. As such, I made it my mission to understand a typical user journey for the department when a senior civil servant or minister would engage with business and community leaders.
 
@@ -29,6 +33,8 @@ These interviews also provided me with a greater level of detail to understand w
 {{% section %}}
 
 ## A clickable prototype to capture the imagination of leadership
+
+{{% video name=`beissmol` width=640 alt=`A walkthrough of our coded clickable prototype created as a demonstration for senior leadership` %}}
 
 Using the information and artefacts gathered during user workshops, I assembled a rough and ready prototype to address some of the user needs. In the prototype, we presented a view of an activity feed of potential engagement triggers, including announcements of grant funding and regional job creation. From here, a user could see associated entities, such as:
 * **Individuals**, including employment history (scraped from LinkedIn), engagement history (scraping from calendar events and emails), news events (using keyword searches)

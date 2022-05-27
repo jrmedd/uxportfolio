@@ -1,5 +1,8 @@
-<picture>
-  <source srcset="{{ .Get.src }}.webp" type="image/webp" />
-  <source srcset="{{ .Get.src }}.png" type="image/png" />
-  <img width="{{ .Get.width }}" src="{{ .Get.src }}.png" alt="{{ .Get.alt }}" />
-</picture>
+<figure>
+  <picture>
+    <source srcset="{{ .Get `name` }}.webp" type="image/webp" />
+    <source srcset="{{ .Get `name` }}.png" type="image/png" />
+    <img width="{{ .Get `width` }}" src="{{ .Get `name` }}.png" alt="{{ .Get `alt` }}" />
+  </picture>
+  <figcaption>{{ .Get `alt` }}</figcaption>
+</figure>

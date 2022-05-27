@@ -4,7 +4,7 @@
 		<h1>{{ .Title }}</h1>
 		<h2>{{ .Description }}</h2>
 		{{ if .Params.Hero }}
-		<figure class="hero">
+		<figure>
 			<picture>
 				<source srcset="{{ .Params.Hero }}.webp" type="image/webp" />
 				<source srcset="{{ .Params.Hero }}.png" type="image/png" />

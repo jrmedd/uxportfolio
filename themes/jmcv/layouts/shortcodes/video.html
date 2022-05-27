@@ -1,4 +1,7 @@
-<video playsinline="true" autoplay="true" loop="true" muted="true" width="{{ .Get.width}}">
-  <source src="{{ .Get.webm }}.webm" type="video/webm" />
-  <source src="{{ .Get.mp4 }}" type="video/mp4"/>
-</video>
+<figure>
+  <video playsinline="true" autoplay="true" loop="true" muted="true" width="{{ .Get `width` }}">
+    <source src="{{ .Get `name` }}.webm" type="video/webm" />
+    <source src="{{ .Get `name` }}.mp4" type="video/mp4"/>
+  </video>
+  <figcaption>{{ .Get `alt` }}</figcaption>
+</figure>
