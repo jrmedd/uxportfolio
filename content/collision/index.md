@@ -30,7 +30,7 @@ During my conversations with them, I learned that young people had no sense of o
 
 ## Creating an online art creation tool
 
-{{% video name=`drawing` alt=`Flags could be as simple or complex as participants wanted, with curated palettes sourced from Lopspec.com` %}}
+{{% video name=`drawing` alt=`Flags could be as simple or complex as participants wanted, with curated palettes sourced from Lospec.com` %}}
 
 During the workshops. the young people were invited to create abstract digital artworks using a variety of online tools. Seeing how positively they responded to these activities, I wa inspired to create a short online creative experience of my own for them to experiment with.
 

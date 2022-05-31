@@ -34,7 +34,6 @@ As part of the UX team, I helped to instigate several major organisational chang
 
 {{% webp name=`bp-aria` alt=`An example of a new component – a combobox – with suggested ARIA attributes and keyboard control behaviour prepared for UI developers.`%}}
 
-
 {{%/ section %}}
 
 {{% section %}}
@@ -58,7 +57,7 @@ As part of the UX team, I helped to instigate several major organisational chang
 {{% webp name=`scheduler-legacy` alt=`An example the existing scheduler user interface which, while capable, was not optimised for the complex process branching our customers demanded of it.`%}}
 {{% webp name=`scheduler-proposed-draft` alt=`The first draft of a scheduler interface, built using elements of our design system, to better reflect the logic applied by our customers.`%}}
 
-* We observed in multiple user sessions that our highest-performing customers were leveraging the software's scheduling functionality to do more than scheduling. 
+* We observed in multiple user sessions that our highest-performing customers were leveraging the software's scheduling functionality to do more than scheduling.
 * Customers were modularising their processes into groups of tasks that provided logical execution of authentication, queue-loading, spawning multiple simultaneous automations, and fault-reporting, all using an interface that was never optimally designed for this purpose.
 * The sub-optimal interface meant that users had to use additional workarounds to restart failed schedules, maintain complex external documentation to understand the flow and operation of each of the scheduled automations, and, in some cases, create additional custom software to help manage the operation of these flows.
 * Our proposed approach was to have an interface that better-reflected the logic our users were configuring, with the ability to "drop-in" at any point to execute tasks and quickly reconfigure each step if necessary.
