@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
 
 $background: #27252f;
-$background-transparent: #27252fdd;
 $text: #ffffff;
 $icons: #3a343d;
 $readable-width: 70ch;
@@ -130,13 +129,7 @@ figure {
   margin: 2rem 0;
   position: relative;
   figcaption {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
     padding: .5rem;
-    background-color: $background-transparent;
-    text-shadow: 1px 1px 0px $icons;
   }
   img, video {
     width: 100%;
