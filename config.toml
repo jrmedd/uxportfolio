@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://portfolio-pq22.onrender.com/'
 languageCode = 'en-us'
 title = 'James Medd'
 theme = "jmcv"
