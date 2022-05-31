@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {{$metaImage := resources.Get "images/meta.png" | fingerprint }}
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="James Medd – Digital Experience Designer">
+  <meta name="description" content="A selection of highlights from my UX and UI portfolio, including public sector service design, accessible web development, and community art projects.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://portfolio.jamesmedd.co.uk/">
+  <meta property="og:title" content="James Medd – Digital Experience Designer">
+  <meta property="og:description" content="A selection of highlights from my UX and UI portfolio, including public sector service design, accessible web development, and community art projects.">
+  <meta property="og:image" content="{{ $metaImage.Permalink }}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://portfolio.jamesmedd.co.uk/">
+  <meta property="twitter:title" content="James Medd – Digital Experience Designer">
+  <meta property="twitter:description" content="A selection of highlights from my UX and UI portfolio, including public sector service design, accessible web development, and community art projects.">
+  <meta property="twitter:image" content="{{ $metaImage.Permalink }}">
   {{ $sass := resources.Get "scss/main.scss" | fingerprint}}
   {{ $transpiled := $sass | resources.ToCSS | resources.Minify}}
   <link rel="stylesheet" type="text/css" href="{{ $transpiled.Permalink }}" />
