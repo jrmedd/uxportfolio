@@ -2,7 +2,7 @@
 title: "Blue Prism"
 description: "Creating a design system and prepping a major version transition"
 date: 2022-05-23T10:24:27+01:00
-draft: true
+draft: false
 hero: './hero'
 caption: 'A mock-up of a redesigned task-sequencing area of Blue Prism'
 weight: 2

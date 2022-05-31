@@ -1,7 +1,7 @@
 ---
 title: "UX / UI portfolio highlights"
 date: 2022-05-23T09:09:15+01:00
-draft: true
+draft: false
 email: james@jamesmedd.co.uk
 social: ['instagram', 'twitter', 'youtube', 'linkedin']
 ---

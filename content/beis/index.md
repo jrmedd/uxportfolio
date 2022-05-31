@@ -2,7 +2,7 @@
 title: "BEIS"
 description: "Prioritising information in the civil service"
 date: 2022-05-23T13:28:21+01:00
-draft: true
+draft: false
 weight: 3
 hero: 'hero'
 caption: 'An example of user responses to a prototype during the design phase.'
@@ -37,6 +37,7 @@ These interviews also provided me with a greater level of detail to understand w
 {{% video name=`beissmol` width=640 alt=`A walkthrough of our coded clickable prototype created as a demonstration for senior leadership` %}}
 
 Using the information and artefacts gathered during user workshops, I assembled a rough and ready prototype to address some of the user needs. In the prototype, we presented a view of an activity feed of potential engagement triggers, including announcements of grant funding and regional job creation. From here, a user could see associated entities, such as:
+
 * **Individuals**, including employment history (scraped from LinkedIn), engagement history (scraping from calendar events and emails), news events (using keyword searches)
 * **Businesses**, including public funding history, notable news articles, responses to policy green papers, and social media sentiment (based on evaluation of social media posts about those businesses)
 * **Regions**, including ONS statistics on employment and investment in the area where businesses and individuals are based

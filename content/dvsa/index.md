@@ -2,7 +2,7 @@
 title: "DVSA CVS"
 description: "Designing the Driver & Vehicle Standards Agency's Commercial Vehicle Service"
 date: 2022-05-23T10:24:27+01:00
-draft: true
+draft: false
 hero: './hero'
 caption: 'A screenshot of the "Manage your vehicle testing" homepage'
 weight: 1

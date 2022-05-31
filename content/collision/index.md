@@ -2,7 +2,7 @@
 title: "Collision"
 description: "Imagining the future of our high streets with young people"
 date: 2022-05-23T13:28:31+01:00
-draft: true
+draft: false
 weight: 4
 hero: 'hero'
 caption: 'The app allowed users to create a flag, take it out into the world, and plant it'
