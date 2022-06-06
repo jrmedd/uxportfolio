@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   {{ $metaImage := resources.Get "images/meta.png" | fingerprint }}
-  {{ $appleTouch := resource.Get "images/apple-touch-icon.png" | fingerprint }}
-  {{ $favicon16 := resource.Get "images/favicon-16x16.png" | fingerprint }}
-  {{ $favicon32 := resource.Get "images/favicon-32x32.png" | fingerprint }}
-  {{ $manifest := resource.Get "images/site.webmanifest" | fingerprint }}
-  {{ $safariPin := resource.Get "images/site.webmanifest" | fingerprint }}
-  <link rel="apple-touch-icon" sizes="180x180" href="$appleTouch.Permalink">
-  <link rel="icon" type="image/png" sizes="32x32" href="$favicon16.Permalink">
-  <link rel="icon" type="image/png" sizes="16x16" href="$favicon32.Permalink">
-  <link rel="manifest" href="$manifest.Permalink">
-  <link rel="mask-icon" href="$safariPin.Permalink" color="#27252f">
+  {{ $appleTouch := resources.Get "images/apple-touch-icon.png" | fingerprint }}
+  {{ $favicon16 := resources.Get "images/favicon-16x16.png" | fingerprint }}
+  {{ $favicon32 := resources.Get "images/favicon-32x32.png" | fingerprint }}
+  {{ $manifest := resources.Get "images/site.webmanifest" | fingerprint }}
+  {{ $safariPin := resources.Get "images/site.webmanifest" | fingerprint }}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ $appleTouch.Permalink }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon16.Permalink }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon32.Permalink }}">
+  <link rel="manifest" href="{{ $manifest.Permalink }}">
+  <link rel="mask-icon" href="{{ $safariPin.Permalink }}" color="#27252f">
   <meta name="msapplication-TileColor" content="#27252f">
   <meta name="theme-color" content="#27252f">
   <meta charset="UTF-8">
