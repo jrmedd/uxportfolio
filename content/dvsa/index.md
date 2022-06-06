@@ -12,9 +12,9 @@ weight: 1
 
 ## Overview
 
-This is undoubtedly one of the most complex services I've ever had to work on. The DVSA is responsible for safety on Britain's roads and tests hundreds of thousands of vehicles every year to ensure they meet safety standards. The existing business processes were complex and inefficient, the existing software packages slow and outdated, and a previous supplier had failed to deliver the project, meaning we had to pull on a lot of existing loose threads.
+This is undoubtedly one of the most complex services I've ever had to work on. The DVSA is responsible for safety on Britain's roads and tests hundreds of thousands of vehicles every year to ensure they meet safety standards. The existing business processes were complex and inefficient, the existing software packages slow and outdated, and a previous supplier had failed to deliver the project, meaning we had to pull on a lot of existing loose threads to get the job done.
 
-The service users include commercial customers – haulage operators and bus companies – vehicle owners and importers, and staff members within the DVSA across multiple departments.
+The service users include commercial customers – haulage operators and bus companies – private vehicle owners and importers, and staff members within the DVSA across multiple departments.
 
 {{% webp name=`cvs-service-blueprint` width=640 alt=`A zoomed out look at the first draft of a CVS service blueprint` %}}
 
@@ -24,7 +24,7 @@ The service users include commercial customers – haulage operators and bus com
 
 ## Project objectives
 
-* Provide a service compliant with the GOV.UK Service Standard to Authorised Testing Facilities (ATFs) enabling them to monitor DVSA testing activity at their sites. This service is on a GOV.UK domain and is called "Manage your vehicle testing".
+* Provide a service compliant with the GOV.UK Service Standard to Authorised Testing Facilities (ATFs), enabling them to monitor DVSA testing activity at their sites. This service is on a GOV.UK domain and is called "Manage your vehicle testing".
 * Modernise decades of legacy processes and bring all IT to a cloud-hosted solution. This includes vehicle technical and test data records, applications made by vehicle owners and operators, financial transactions, and contractual information.
 
 {{%/ section %}}
@@ -36,7 +36,7 @@ The service users include commercial customers – haulage operators and bus com
 {{% webp name=`myvt-tct` width=640 alt=`A view of "Today's completed tests" within "Manage your vehicle testing"` %}}
 
 * ATFs are garages – often operated by bus operators or haulage companies – that enter a contract with the DVSA to provide facilities to perform tests on vehicles. They pay the DVSA for each test from an pre-funded account (PFA) that they setup with the DVSA when they become an ATF.
-* Monitoring their PFA balance and topping up their account, seeing when tests are completed and what they will be charged, and searching through past transactions are all common activities that ATFs need to perform in order to successfully run their businesses. Prior to the CVS project, they have been heavily reliant on making direct contact with the DVSA in order to perform all of these, which is frustrating and inefficient for both parties.
+* Common admin activities that ATFs need to perform in order be run efficiently include: monitoring their PFA balance and topping up their account, seeing when tests are completed and what they will be charged, and searching through past transactions for their own finances. Prior to the CVS project, they have been heavily reliant on making direct contact with the DVSA in order to perform all of these, which is frustrating and inefficient for both parties.
 * The service we designed provides ATFs with the ability to: view their balance and running total of tests completed today, a full breakdown of transactions, a view of today's completed tests, the ability to top-up their account, and a team member management area to add/remove other staff members within their organisation.
 * The longer term aims of the service would also incorporate a previously identified user need to apply for a vehicle test, approval, or replacement certificate. These applications are often made by ATFs themselves, as well as vehicle importers and manufacturers, many of whom also hold pre-funded accounts with the DVSA to pay for these tests.
 
@@ -60,19 +60,20 @@ The service users include commercial customers – haulage operators and bus com
 
 ### Manage your vehicle testing – design iteration and development of GOV.UK service
 
-* The previous phase of the project had helped to identify the service users and their needs, resulting in the design of portal that ATFs could use to manage testing on their sites.
+* The previous phase of the project had helped to identify the service users and their needs, resulting in the design of web portal that ATFs could use to manage testing on their sites.
 * As a user-centred design team, we felt there were aspects of the existing design work that didn't marry up with the findings of the research, and gaps in the documented decision making.
 * Additionally, areas of the site that had already been developed featured numerous accessibility flaws, which weren't helped by a confusing information architecture.
 * As a result, we revisited the designs and A/B tested a version that seemed more consistent with research. Happily, we found our [System Usability Scale](https://en.wikipedia.org/wiki/System_usability_scale) scores improved with our changes.
+* I lead the effort to ensure our service met [WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/glance/) AA standard, by contributing as a web developer, manually testing using assistive technology, and planning accessibility research and our full WCAG audit.
 
 ### Multi-factor authentication research
 
 {{% video name=`mfa-proto` width=640 alt=`A walkthrough of our authentication prototypes, created in Figma` %}}
 
 * Users authenticating to use our service are required to use multi-factor authentication (MFA) meaning that they would require the use of a phone to confirm their identity.
-* Making this journey as usable as possible was key, as we tested extensively with users from across the [digital inclusion scale](https://userresearch.blog.gov.uk/2019/02/22/reflecting-on-how-we-developed-the-digital-inclusion-scale/).
-* Our designs were tested with users ranging from 5 ("learning the ropes") to 8 ("confident") on the digital inclusion scale.
-* We also had to ensure that our users would be able to access a phone at their workplace, as some sites struggled with phone signal and availability of individual phone lines
-* Our resulting service included an ["assisted digital"](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) pathway, where users struggling to authenticate using a mobile could contact the DVSA via a landline and temporarily disable the MFA
+* Making this journey as usable as possible as we knew our users were spread across the [digital inclusion scale](https://userresearch.blog.gov.uk/2019/02/22/reflecting-on-how-we-developed-the-digital-inclusion-scale/).
+* Our designs were tested extensively with users ranging from 5 ("learning the ropes") to 8 ("confident") on the digital inclusion scale.
+* We also had to ensure that our users would be able to access a phone at their workplace, as some sites struggled with phone signal and availability of individual phone lines.
+* Our resulting service included an ["assisted digital"](https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction) pathway, where users struggling to authenticate using a mobile could contact the DVSA via a landline and temporarily disable MFA.
 
 {{%/ section %}}
