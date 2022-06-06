@@ -91,6 +91,11 @@ a {
 
 .work {
   width: $readable-width;
+  max-width: 95%;
+  div {
+    max-width: 95%;
+    margin: 0;
+  }
   & > div + div {
   margin-top: 2rem;
   }
