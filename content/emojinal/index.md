@@ -28,7 +28,7 @@ It was then that I realised that, while there was precedent in computing for per
 
 {{% section %}}
 
-{{% video name=`emojinal` alt=`Some of the different sentiment values returned by the API for different emojis.` %}}
+{{% video name=`emojinal` width=640 alt=`Some of the different sentiment values returned by the API for different emojis.` %}}
 
 ## The Emojinal API
 
@@ -38,7 +38,7 @@ One of the most comprehensive studies of emoji sentiment I was a able to locate 
 
 {{% section %}}
 
-{{% webp name=`exampleresponse` alt=`An example response from the API, showing the different scores in greater detail.` %}}
+{{% webp name=`exampleresponse` width=640 alt=`An example response from the API, showing the different scores in greater detail.` %}}
 
 ## What next?
 

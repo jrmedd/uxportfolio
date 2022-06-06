@@ -20,7 +20,7 @@ This piece of work was a commission from Manchester-based arts and technology or
 
 ## When worlds collide
 
-{{% video name=`introanim` alt=`The intro animation created for the application` %}}
+{{% video name=`introanim` alt=`The intro animation created for the application` width=640 %}}
 
 During my conversations with them, I learned that young people had no sense of ownership of their high streets, which they felt were lacking colour and creative opportunities. In discussions about online worlds such as [Roblox](https://www.roblox.com/) – which they frequently inhabited – I learned that online spaces offer freedom of creativity and play, something that was missing from their own environments. In the words of one of the young people, they would like to see a "collision" of their physical and online worlds.
 
@@ -30,7 +30,7 @@ During my conversations with them, I learned that young people had no sense of o
 
 ## Creating an online art creation tool
 
-{{% video name=`drawing` alt=`Flags could be as simple or complex as participants wanted, with curated palettes sourced from Lospec.com` %}}
+{{% video name=`drawing` alt=`Flags could be as simple or complex as participants wanted, with curated palettes sourced from Lospec.com` width=640 %}}
 
 During the workshops, the young people were invited to create abstract digital artworks using a variety of online tools. Seeing how positively they responded to these activities, I was inspired to create a short online creative experience of my own for them to experiment with.
 

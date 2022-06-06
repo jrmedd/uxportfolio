@@ -18,7 +18,7 @@ This was my first project working for cloudThing, and boy did they throw me in t
 
 {{% section %}}
 
-{{% webp name=`beisprofiles` alt=`A list of user profiles created on the back of several hours of interviewing staff members.`%}}
+{{% webp name=`beisprofiles` alt=`A list of user profiles created on the back of several hours of interviewing staff members.` width=640 %}}
 
 ## Finding the root of the requirements
 
