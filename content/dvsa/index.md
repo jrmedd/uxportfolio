@@ -14,6 +14,8 @@ weight: 1
 
 This is undoubtedly one of the most complex services I've ever had to work on. The DVSA is responsible for safety on Britain's roads and tests hundreds of thousands of vehicles every year to ensure they meet safety standards. The existing business processes were complex and inefficient, the existing software packages slow and outdated, and a previous supplier had failed to deliver the project, meaning we had to pull on a lot of existing loose threads to get the job done.
 
+A large portion of this service – visible to end users under the name "Manage your vehicle testing" – passed its GOV.UK BETA service standard assessment in September 2022.
+
 The service users include commercial customers – haulage operators and bus companies – private vehicle owners and importers, and staff members within the DVSA across multiple departments.
 
 {{% webp name=`cvs-service-blueprint` width=640 alt=`A zoomed out look at the first draft of a CVS service blueprint` %}}
