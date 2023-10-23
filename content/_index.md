@@ -1,5 +1,5 @@
 ---
-title: "Digital experience designer"
+title: "Design portfolio"
 date: 2022-05-23T09:09:15+01:00
 draft: false
 email: james@jamesmedd.co.uk
