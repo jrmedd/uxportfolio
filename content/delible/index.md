@@ -16,6 +16,8 @@ My therapist recently asked me to start writing things down. The purpose of this
 
 Unlike indelible ink, this ink won't last longer than a day. Anything you type into it is totally private and disappears completely at midnight. It's minimal and unobtrusive, so I can focus on getting my thoughts down without too much distraction.
 
+If this sounds like something that might help you, you can find it at [delible.ink](https://delible.ink/), or download it on [Windows](https://apps.microsoft.com/detail/9mxbbnkn1t9x?hl=en-gb&gl=US) and [Android](https://play.google.com/store/apps/details?id=ink.delible.twa).
+
 {{%/ section %}}
 
 {{% section %}}
