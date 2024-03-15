@@ -5,7 +5,7 @@ date: 2022-05-23T13:28:31+01:00
 draft: false
 weight: 2
 hero: 'hero'
-caption: 'Anything you type into Delible ink. is totally private and disappears completely at midnight.'
+caption: 'Delible ink isn't permanent. Put down your thoughts and they'll fade at the end of the day.'
 ---
 
 {{% section %}}
