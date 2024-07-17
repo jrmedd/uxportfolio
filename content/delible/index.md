@@ -24,4 +24,8 @@ Unlike indelible ink, this ink won't last longer than a day. Anything you type i
 
 Delible ink is completely private by design and doesn't share any data with the rest of the web. The application runs in the browser alone and doesn't send any data back to a server. Text is kept until midnight in localStorage, which means it is stored by the browser. There is a basic form of encryption to ensure the stored text is garbled until Delible Ink. is opened by the user.
 
+## Try it out
+
+If you think Delible ink. might help you you can try it out at [delible.ink](https://delible.ink). For more about how privacy works, and links to the Windows and Android apps, [check out the GitHub repository](https://github.com/jrmedd/delible).
+
 {{%/ section %}}
